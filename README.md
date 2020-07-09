@@ -1,0 +1,2 @@
+- Twitter: [@piranha](https://twitter.com/piranha)
+- Blog: [https://solovyov.net/](https://solovyov.net/)
