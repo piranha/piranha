@@ -1,5 +1,5 @@
 You can follow me on
-Twitter [@piranha](https://twitter.com/piranha)
+Twitter [@asolovyov](https://twitter.com/asolovyov)
 or read my [blog](https://solovyov.net/):
 - [PostgreSQL query JIT](https://solovyov.net/blog/2020/postgresql-query-jit/)
 - [Blog workflow](https://solovyov.net/blog/2020/blog-workflow/)
