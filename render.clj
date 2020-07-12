@@ -8,7 +8,7 @@
 (def FEED "https://solovyov.net/blog.atom")
 (def HEAD
   "You can follow me on
-Twitter [@piranha](https://twitter.com/piranha)
+Twitter [@asolovyov](https://twitter.com/asolovyov)
 or read my [blog](https://solovyov.net/):")
 
 
