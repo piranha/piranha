@@ -1,0 +1,30 @@
+name: Build README
+
+on:
+  push:
+  workflow_dispatch:
+  schedule:
+    - cron: '32 * * * *'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout repo
+      uses: actions/checkout@v2
+    - name: Download babashka
+      run: |
+        curl -sLO https://github.com/borkdude/babashka/releases/download/v0.1.3/babashka-0.1.3-linux-static-amd64.zip
+        unzip babashka-0.1.3-linux-static-amd64.zip
+    - name: render
+      run: |
+        ./bb render.clj > README.md
+        cat README.md
+    - name: commit and push if changed
+      run: |
+        test -z "$(git status --porcelain -uno)" && exit 0
+        git diff
+        git config --global user.email "readme-bot@example.com"
+        git config --global user.name "README-bot"
+        git commit -am "Updated content"
+        git push
