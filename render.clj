@@ -7,9 +7,13 @@
 
 (def FEED "https://solovyov.net/blog.atom")
 (def HEAD
-  "You can follow me on
-Twitter [@asolovyov](https://twitter.com/asolovyov)
-or read my [blog](https://solovyov.net/):")
+  "Github is just code with no context! Find out more:
+
+- follow me on Twitter [@asolovyov](https://twitter.com/asolovyov)
+- subscribe to my Telegram channel [@bitethebyte](https://t.me/bitethebyte) (it's in Ukrainian)
+- read my [blog](https://solovyov.net/)
+
+Here are latest posts from the blog:")
 
 
 (defn tag= [tag nodes]
