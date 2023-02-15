@@ -14,8 +14,8 @@ jobs:
       uses: actions/checkout@v2
     - name: Download babashka
       run: |
-        curl -sLO https://github.com/babashka/babashka/releases/download/v0.3.1/babashka-0.3.1-linux-static-amd64.tar.gz
-        tar xf babashka-0.3.1-linux-static-amd64.tar.gz
+        curl -sLO https://github.com/babashka/babashka/releases/download/v1.1.173/babashka-1.1.173-linux-amd64-static.tar.gz
+        tar xf babashka-1.1.173-linux-amd64-static.tar.gz
     - name: render
       run: |
         ./bb render.clj > README.md
